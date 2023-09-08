@@ -9,32 +9,30 @@ import SwiftUI
 
 struct SubjectView: View {
     
+    @State var subjects = [Subject]()
     var level: Level
     
     var body: some View {
         
-        ScrollView {
-            
-            VStack {
+            ScrollView {
                 
-                ForEach(level.subjects) { subject in
+                VStack {
                     
-                    NavigationLink {
-                        DetailView(subject: subject )
-                    } label: {
-                        Text(subject.name)
-
+                    ForEach(level.subjects) { subject in
+                        
+                        NavigationLink {
+                            DetailView(subject: subject )
+                        } label: {
+                            SubjectRow(subject: subject)
+                                .padding(.bottom, 50)
+                        }
+                        .buttonStyle(.plain)
                     }
-
-                    
                 }
             }
-            
+            .padding()
         }
-        
-        
     }
-}
 
 struct SubjectView_Previews: PreviewProvider {
     static var previews: some View {

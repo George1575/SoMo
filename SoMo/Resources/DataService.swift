@@ -49,14 +49,14 @@ struct DataService {
                      imageName: "tlevel",
                      subjects: [
                         Subject(name: "Health",
-                                   summary: "The T Level in health is a high quality, work focused alternative to A Levels for young people who want to work in the health sector. This technical qualification prepares students for work and further study in this industry.",
+                                   summary: "Focused on the healthcare sector, this T Level provides essential knowledge on patient care, health protocols, and medical systems. Designed to groom students for technical roles in healthcare, apprenticeships, or further academic pursuits in health studies.",
                                    longDescription: """
           This qualification has been developed by experts and employers and reflects the needs of specialist occupations within the healthcare sector. This course will provide learners with the knowledge, skills and behaviours required to progress into a wide range of skilled employment options or higher-level technical study. Truro and Penwith College offer a range of higher-level university courses and apprenticeships that will allow T Level students to progress onto. The core content covers a breadth of subjects related to the health and science sector and includes core science concepts, health and wellbeing, safeguarding, person-centred care, good clinical practice and infection, prevention and control.
           """,
                                 imageName: "health"),
                         
                         Subject(name: "Digital Production, Design and Development",
-                            summary: "The T Level in health is a high quality, work focused alternative to A Levels for young people who want to work in the health sector. This technical qualification prepares students for work and further study in this industry.",
+                            summary: "This T Level prepares students for the digital landscape by imparting skills in digital design, production techniques, and software tools. Aimed at fostering expertise for technical roles in the digital sector, higher education, or relevant apprenticeships.",
                             longDescription: """
                   This course has been developed in collaboration with employers and business to ensure that the content is relevant and meets industry standards. Building on your existing knowledge, this course will stretch and challenge your IT abilities, preparing you for work in the IT sector. With a specific focus on software design and development, you will spend a large amount of time programming and undertake a variety of projects, learning both theoretical and practical elements of project management. Lessons take place in specialist IT rooms with networked PCs. Your lecturers will be specialists in their field who will teach you through a variety of demonstrations, lectures and by helping you undertake a variety of practical tasks.
                   """,

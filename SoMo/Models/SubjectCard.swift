@@ -15,10 +15,16 @@ struct SubjectCard: View {
         
         ZStack{
             
-            Image(level.imageName)
-                .resizable()
+            Rectangle()
+                .background(content: {
+                    Image(level.imageName)
+                        .resizable()
+                        .cornerRadius(15)
+                        .aspectRatio(contentMode: .fill)
+                })
+                .foregroundColor(.clear)
                 .cornerRadius(15)
-            
+                
             Rectangle()
                 .foregroundColor(.black)
                 .opacity(0.5)
@@ -29,18 +35,13 @@ struct SubjectCard: View {
                     .font(.largeTitle)
                     .bold()
                     .foregroundColor(.white)
+
                 
-                Spacer()
-                
-                Text(level.name)
             }
             .padding()
             .foregroundColor(.white)
         }
-        
-
-
-
+        .frame(height: 100)
 
     }
 }

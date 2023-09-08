@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B307C0A92AAB6264009641A0 /* SubjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B307C0A82AAB6264009641A0 /* SubjectRow.swift */; };
 		B345D8A92AA9B7F200DFF0BD /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345D8A82AA9B7F200DFF0BD /* SubjectView.swift */; };
 		B345D8AD2AA9B92F00DFF0BD /* SubjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345D8AC2AA9B92F00DFF0BD /* SubjectCard.swift */; };
 		B345D8AF2AA9BA0800DFF0BD /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345D8AE2AA9BA0800DFF0BD /* Level.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B307C0A82AAB6264009641A0 /* SubjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectRow.swift; sourceTree = "<group>"; };
 		B345D8A82AA9B7F200DFF0BD /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
 		B345D8AC2AA9B92F00DFF0BD /* SubjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCard.swift; sourceTree = "<group>"; };
 		B345D8AE2AA9BA0800DFF0BD /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				B345D8AE2AA9BA0800DFF0BD /* Level.swift */,
 				B345D8B62AA9D50200DFF0BD /* Subject.swift */,
 				B345D8AC2AA9B92F00DFF0BD /* SubjectCard.swift */,
+				B307C0A82AAB6264009641A0 /* SubjectRow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B345D8B72AA9D50200DFF0BD /* Subject.swift in Sources */,
+				B307C0A92AAB6264009641A0 /* SubjectRow.swift in Sources */,
 				B345D8B92AAA327000DFF0BD /* DetailView.swift in Sources */,
 				B35F6C782AA8CCC700BD7243 /* LevelView.swift in Sources */,
 				B345D8A92AA9B7F200DFF0BD /* SubjectView.swift in Sources */,

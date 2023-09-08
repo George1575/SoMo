@@ -18,6 +18,12 @@ struct LevelView: View {
             
             ScrollView {
                 VStack {
+                    HStack{
+                        Text("Explore")
+                            .font(.largeTitle)
+                            .bold()
+                        Spacer()
+                    }
                     
                     ForEach(levels) { level in
                         
@@ -27,16 +33,12 @@ struct LevelView: View {
                             SubjectCard(level: level)
 
                         }
-
-                        
-                        
                     }
                 }
             }
             .padding()
         }
-        
-        
+        .ignoresSafeArea()
         .onAppear {
             levels = dataService.getData()
         }
