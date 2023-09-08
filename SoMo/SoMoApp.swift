@@ -11,7 +11,8 @@ import SwiftUI
 struct SoMoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LevelView()
+                .environmentObject(ContentModel())
         }
     }
 }
