@@ -21,6 +21,12 @@ struct student {
     var currentLevel: String
     var futureLevel: String
     var subject: String
-    
-    
+
 }
+
+struct SubjectSearch: Identifiable {
+    let id = UUID()
+    let name: String
+}
+
+

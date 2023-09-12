@@ -8,20 +8,37 @@
 import SwiftUI
 
 struct CustomHomeView: View {
-    var educationLevel: EducationLevel?
-    var interestedEducation: InterestedEducation?
+    
+    @State var educationLevel: EducationLevel?
+    @State var interestedEducation: InterestedEducation?
+    @State var interestedSubjects: SubjectSelection?
+    @State var isOnboardingComplete = true
 
     var body: some View {
-        VStack {
-            Text("Your prior education level is \(educationLevel?.rawValue ?? "Unknown")")
-            Text("You're interested in \(interestedEducation?.rawValue ?? "Unknown")")
+        
+        if isOnboardingComplete {
+            VStack{
+                
+                Text("You have completed onboarding! Here is some information about: \(interestedEducation?.rawValue ?? "Unknown"),\(interestedSubjects?.rawValue ?? "Unknown")")
+                    .font(.title)
+                    .bold()
+                    .padding()
+                
+                Spacer()
+            }
+
+            // Go to the main app or show the selected options
+        } else {
+            Text("Onboarding failed")
+            
         }
     }
-}
-
-
-struct CustomHomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomHomeView()
+    
+    
+    
+    struct CustomHomeView_Previews: PreviewProvider {
+        static var previews: some View {
+            CustomHomeView()
+        }
     }
 }

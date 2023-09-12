@@ -12,25 +12,26 @@ struct Selection1: View {
     @State var selectedIndex:Int?
     @State var educationLevel: EducationLevel?
     @State var interestedEducation: InterestedEducation?
+    @State var interestedSubjects: SubjectSelection?
     @State var isOnboardingComplete = false
+    @State var showThirdQuestion = false
 
     var body: some View {
         
         if isOnboardingComplete {
-            CustomHomeView(educationLevel: educationLevel, interestedEducation: interestedEducation)
+            CustomHomeView(educationLevel: educationLevel, interestedEducation: interestedEducation, interestedSubjects: interestedSubjects)
+
+            
         } else {
-            EducationLevelView(educationLevel: $educationLevel, interestedEducation: $interestedEducation, isOnboardingComplete: $isOnboardingComplete)
+            EducationLevelView(educationLevel: $educationLevel,
+                               interestedEducation: $interestedEducation,
+                               interestedSubjects: $interestedSubjects,
+                               isOnboardingComplete: $isOnboardingComplete)
+            
         }
     }
 }
 
-struct YourAppEntry: App {
-    var body: some Scene {
-        WindowGroup {
-            MainView()
-        }
-    }
-}
 
 enum EducationLevel: String, CaseIterable {
     case GCSE = "GCSE"
@@ -38,7 +39,6 @@ enum EducationLevel: String, CaseIterable {
     case tlevels = "T levels"
     case vocational = "Vocational"
     case apprenticeship = "Apprenticeship"
-    case other = "Other"
 }
 
 enum InterestedEducation: String, CaseIterable {
@@ -48,9 +48,20 @@ enum InterestedEducation: String, CaseIterable {
     case tlevels = "T levels"
     case vocational = "Vocational"
     case apprenticeship = "Apprenticeship"
-    case other = "Other"
 }
 
+enum SubjectSelection: String, CaseIterable {
+    case math = "Math"
+    case science = "Science"
+    case history = "History"
+    case biology = "Biology"
+    case economics = "Economics"
+    case physics = "Physics"
+    case chemistry = "Chemistry"
+    // ... add other subjects as needed
+    
+
+}
 
 
 

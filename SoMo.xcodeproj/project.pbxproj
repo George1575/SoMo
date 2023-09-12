@@ -74,7 +74,6 @@
 				B35F6C832AA8CDE000BD7243 /* Views */,
 				B35F6C842AA8CE1700BD7243 /* ViewModels */,
 				B35F6C852AA8CE2F00BD7243 /* Models */,
-				B35F6C862AA8CE3A00BD7243 /* Resources */,
 			);
 			path = ExploreView;
 			sourceTree = "<group>";
@@ -117,8 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				B35F6C752AA8CCC700BD7243 /* SoMoApp.swift */,
+				B35F6C882AA8D01C00BD7243 /* ContentModel.swift */,
 				B307C0AB2AAB72EF009641A0 /* TabView */,
 				B363AF802AACE34F00F77EF4 /* LaunchView */,
+				B35F6C862AA8CE3A00BD7243 /* Resources */,
 				B307C0AA2AAB72C4009641A0 /* ExploreView */,
 				B35F6C872AA8CE4600BD7243 /* Helpers */,
 				B35F6C792AA8CCC900BD7243 /* Assets.xcassets */,
@@ -148,7 +149,6 @@
 		B35F6C842AA8CE1700BD7243 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B35F6C882AA8D01C00BD7243 /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

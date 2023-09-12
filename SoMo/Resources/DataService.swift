@@ -6,8 +6,7 @@
 //
 
 import Foundation
-
-import Foundation
+import SwiftUI
 
 struct DataService {
     //this now calls upon the assets to get the level instances
@@ -108,4 +107,3 @@ func getFileData() -> [Level] {
     
     }
 }
-
